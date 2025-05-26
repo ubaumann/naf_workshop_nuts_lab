@@ -1,0 +1,12 @@
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: mocked_inventory/hosts.yaml
+    group_file: mocked_inventory/groups.yaml
+  transform_function:  # consider using "load_credentials" from nornir_utils
+runner:
+  plugin: threaded
+  options:
+    num_workers: 100
+logging:
+  enabled: false

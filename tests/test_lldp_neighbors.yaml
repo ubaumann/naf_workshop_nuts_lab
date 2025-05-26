@@ -1,0 +1,205 @@
+  - test_class: TestNapalmLldpNeighborsCount
+    test_data:
+      - host: r01
+        neighbor_count: 2  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r02
+        neighbor_count: 5  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r03
+        neighbor_count: 5  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r04
+        neighbor_count: 5  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r05
+        neighbor_count: 5  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r06
+        neighbor_count: 3  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r07
+        neighbor_count: 3  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r08
+        neighbor_count: 4  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r09
+        neighbor_count: 4  # Number of LLDP neighbors need to be updated
+    test_data:
+      - host: r10
+        neighbor_count: 2  # Number of LLDP neighbors need to be updated
+
+  - test_class: TestNapalmLldpNeighbors
+    test_data:
+    # r01
+    - host: r01
+      local_port: Ethernet1
+      remote_host: r02
+      remote_port: Ethernet1
+    - host: r01
+      local_port: Ethernet2
+      remote_host: r03
+      remote_port: Ethernet1
+
+    # r02
+    - host: r02
+      local_port: Ethernet1
+      remote_host: r01
+      remote_port: Ethernet1
+    - host: r02
+      local_port: Ethernet2
+      remote_host: r03
+      remote_port: Ethernet2
+    - host: r02
+      local_port: Ethernet3
+      remote_host: r03
+      remote_port: Ethernet3
+    - host: r02
+      local_port: Ethernet4
+      remote_host: r04
+      remote_port: Ethernet1
+    - host: r02
+      local_port: Ethernet5
+      remote_host: r04
+      remote_port: Ethernet2
+
+    # r03
+    - host: r03
+      local_port: Ethernet1
+      remote_host: r01
+      remote_port: Ethernet2
+    - host: r03
+      local_port: Ethernet2
+      remote_host: r02
+      remote_port: Ethernet2
+    - host: r03
+      local_port: Ethernet3
+      remote_host: r02
+      remote_port: Ethernet3
+    - host: r03
+      local_port: Ethernet4
+      remote_host: r05
+      remote_port: Ethernet1
+    - host: r03
+      local_port: Ethernet5
+      remote_host: r05
+      remote_port: Ethernet2
+
+    # r04
+    - host: r04
+      local_port: Ethernet1
+      remote_host: r02
+      remote_port: Ethernet4
+    - host: r04
+      local_port: Ethernet2
+      remote_host: r02
+      remote_port: Ethernet5
+    - host: r04
+      local_port: Ethernet3
+      remote_host: r05
+      remote_port: Ethernet3
+    - host: r04
+      local_port: Ethernet4
+      remote_host: r05
+      remote_port: Ethernet4
+    - host: r04
+      local_port: Ethernet5
+      remote_host: r06
+      remote_port: Ethernet1
+
+    # r05
+    - host: r05
+      local_port: Ethernet1
+      remote_host: r03
+      remote_port: Ethernet4
+    - host: r05
+      local_port: Ethernet2
+      remote_host: r03
+      remote_port: Ethernet5
+    - host: r05
+      local_port: Ethernet3
+      remote_host: r04
+      remote_port: Ethernet3
+    - host: r05
+      local_port: Ethernet4
+      remote_host: r04
+      remote_port: Ethernet4
+    - host: r05
+      local_port: Ethernet5
+      remote_host: r07
+      remote_port: Ethernet1
+
+    # r06
+    - host: r06
+      local_port: Ethernet1
+      remote_host: r04
+      remote_port: Ethernet5
+    - host: r06
+      local_port: Ethernet2
+      remote_host: r08
+      remote_port: Ethernet1
+    - host: r06
+      local_port: Ethernet3
+      remote_host: r09
+      remote_port: Ethernet1
+
+    # r07
+    - host: r07
+      local_port: Ethernet1
+      remote_host: r05
+      remote_port: Ethernet5
+    - host: r07
+      local_port: Ethernet2
+      remote_host: r08
+      remote_port: Ethernet2
+    - host: r07
+      local_port: Ethernet3
+      remote_host: r09
+      remote_port: Ethernet2
+
+    # r08
+    - host: r08
+      local_port: Ethernet1
+      remote_host: r06
+      remote_port: Ethernet2
+    - host: r08
+      local_port: Ethernet2
+      remote_host: r07
+      remote_port: Ethernet2
+    - host: r08
+      local_port: Ethernet3
+      remote_host: r09
+      remote_port: Ethernet3
+    - host: r08
+      local_port: Ethernet4
+      remote_host: r10
+      remote_port: Ethernet1
+
+    # r09
+    - host: r09
+      local_port: Ethernet1
+      remote_host: r06
+      remote_port: Ethernet3
+    - host: r09
+      local_port: Ethernet2
+      remote_host: r07
+      remote_port: Ethernet3
+    - host: r09
+      local_port: Ethernet3
+      remote_host: r08
+      remote_port: Ethernet3
+    - host: r09
+      local_port: Ethernet4
+      remote_host: r10
+      remote_port: Ethernet2
+
+    # r10
+    - host: r10
+      local_port: Ethernet1
+      remote_host: r08
+      remote_port: Ethernet4
+    - host: r10
+      local_port: Ethernet2
+      remote_host: r09
+      remote_port: Ethernet4

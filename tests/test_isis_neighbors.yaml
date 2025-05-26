@@ -1,0 +1,5 @@
+- test_module: my_module.isis
+  test_class: TestIsisNeighborsCount
+  test_data:
+    - host: r06
+      neighbor_count: 2

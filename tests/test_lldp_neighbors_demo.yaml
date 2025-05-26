@@ -1,0 +1,4 @@
+  - test_class: TestNapalmLldpNeighborsCount
+    test_data:
+      - host: r02
+        neighbor_count: 5  # Number of LLDP neighbors need to be updated

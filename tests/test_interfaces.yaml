@@ -1,0 +1,139 @@
+- test_class: TestNapalmInterfaces
+  test_data:
+    # r01
+    - &interface
+      host: r01
+      name: Ethernet1
+      is_enabled: true
+      is_up: true
+      mtu: 1500
+      speed: 1000
+    - <<: *interface
+      host: r01
+      name: Ethernet2
+
+    # r02
+    - <<: *interface
+      host: r02
+      name: Ethernet1
+    - <<: *interface
+      host: r02
+      name: Ethernet2
+    - <<: *interface
+      host: r02
+      name: Ethernet3
+    - <<: *interface
+      host: r02
+      name: Ethernet4
+    - <<: *interface
+      host: r02
+      name: Ethernet5
+
+    # r03
+    - <<: *interface
+      host: r03
+      name: Ethernet1
+    - <<: *interface
+      host: r03
+      name: Ethernet2
+    - <<: *interface
+      host: r03
+      name: Ethernet3
+    - <<: *interface
+      host: r03
+      name: Ethernet4
+    - <<: *interface
+      host: r03
+      name: Ethernet5
+
+    # r04
+    - <<: *interface
+      host: r04
+      name: Ethernet1
+    - <<: *interface
+      host: r04
+      name: Ethernet2
+    - <<: *interface
+      host: r04
+      name: Ethernet3
+    - <<: *interface
+      host: r04
+      name: Ethernet4
+    - <<: *interface
+      host: r04
+      name: Ethernet5
+
+    # r05
+    - <<: *interface
+      host: r05
+      name: Ethernet1
+    - <<: *interface
+      host: r05
+      name: Ethernet2
+    - <<: *interface
+      host: r05
+      name: Ethernet3
+    - <<: *interface
+      host: r05
+      name: Ethernet4
+    - <<: *interface
+      host: r05
+      name: Ethernet5
+
+    # r06
+    - <<: *interface
+      host: r06
+      name: Ethernet1
+    - <<: *interface
+      host: r06
+      name: Ethernet2
+    - <<: *interface
+      host: r06
+      name: Ethernet3
+
+    # r07
+    - <<: *interface
+      host: r07
+      name: Ethernet1
+    - <<: *interface
+      host: r07
+      name: Ethernet2
+    - <<: *interface
+      host: r07
+      name: Ethernet3
+
+    # r08
+    - <<: *interface
+      host: r08
+      name: Ethernet1
+    - <<: *interface
+      host: r08
+      name: Ethernet2
+    - <<: *interface
+      host: r08
+      name: Ethernet3
+    - <<: *interface
+      host: r08
+      name: Ethernet4
+
+    # r09
+    - <<: *interface
+      host: r09
+      name: Ethernet1
+    - <<: *interface
+      host: r09
+      name: Ethernet2
+    - <<: *interface
+      host: r09
+      name: Ethernet3
+    - <<: *interface
+      host: r09
+      name: Ethernet4
+
+    # r10
+    - <<: *interface
+      host: r10
+      name: Ethernet1
+    - <<: *interface
+      host: r10
+      name: Ethernet2

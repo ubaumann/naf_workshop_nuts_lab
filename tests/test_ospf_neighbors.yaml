@@ -1,0 +1,5 @@
+- test_module: my_module.ospf
+  test_class: TestOspfNeighborsCount
+  test_data:
+    - host: r02
+      neighbor_count: 3
