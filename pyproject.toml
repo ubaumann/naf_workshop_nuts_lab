@@ -3,7 +3,7 @@ name = "naf-workshop-nuts-lab"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.9,<=3.12"
 dependencies = [
     "napalm>=5.0.0",
     "netmiko>=4.5.0",
