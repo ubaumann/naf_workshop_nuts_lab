@@ -3,4 +3,4 @@ provider: clab          # Change to virtualbox or libvirt if needed
 
 
 devices.eos.clab.node.env.CLAB_MGMT_VRF: management   # Add management VRF to cEOS. Not needed after 1.6.4
-devices.eos.clab.image: ceos:4.32.1F
+devices.eos.clab.image: ceos:4.33.1F
